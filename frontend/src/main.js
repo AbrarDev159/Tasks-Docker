@@ -6,8 +6,7 @@ import router from './router'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import axios from 'axios'
 
-axios.defaults.baseURL = 'http://[ip address:port]/api/'
-// axios.defaults.baseURL = ''
+axios.defaults.baseURL = import.meta.env.VITE_API_URL
 
 import "bootstrap/dist/css/bootstrap.min.css"
 

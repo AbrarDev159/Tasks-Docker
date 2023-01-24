@@ -4,6 +4,8 @@ services:
     build: ./frontend
     ports:
      - "5173:5173"
+    environment:
+      VITE_API_URL: "http://[ip address]:1337/api/"
   backend:
     build: ./backend
     ports:
